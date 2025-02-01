@@ -1,0 +1,195 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MakeMyTrip- #1 Travel Website</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <style>
+      .background {
+        background: rgb(232, 232, 232);
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to bottom, #051322, #15457c );
+        background-size: 100% 500px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .logo {
+        height: 40px;
+        width: 117px; 
+        padding-right: 1089px;
+      }
+      .data{
+        display:flex;
+        justify-content:center;
+      }
+      .categories {
+        background-color: white;
+        height:100px;
+        width: 805px;
+        margin-left:-1200px;
+        margin-top:90px;
+        border-radius:10px;
+        box-shadow: 0px 1px 15px 1px #7a7a7a;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        text-align: center; 
+        position:relative;
+      }
+      .categories button{
+        flex:1;
+        max-width:88px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: none; 
+        border: none; 
+        cursor: pointer;
+        padding: 10px;
+        transition: transform 0.3s ease;
+      }
+      .categories button:hover {
+        transform: scale(1.05); 
+      }
+      .categories button img {
+        width: 40px; 
+        height: auto;
+      }
+      .categories button p {
+        font-size: 12px;
+        color: #333;
+        text-align:center;
+        word-wrap: break-word;
+        max-width: 65px;
+        
+      }
+      .categories img{
+        width: 60px;
+        height: auto;
+      }
+      .box {
+        position:absolute;
+        top:150px;
+        left: 10%; 
+        width: 80%; 
+        height: 280px; 
+        background-color: white;
+        border-radius: 10px;
+        z-index: -1; 
+        padding: 20px;
+      }
+      .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px; 
+}
+
+.option-label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.option-label:hover {
+    background-color: #f0f0f0; 
+}
+
+.option {
+    display: none;
+}
+
+.bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.option:checked + .bullet {
+    background-color: #15457c; 
+}
+
+.option-label p {
+    margin: 0;
+}
+      
+
+    </style>
+  </head>
+  <body class = "background">
+    <div >
+      <img class="logo"src="https://promos.makemytrip.com/Growth/Images/1x/mmt_dt_top_icon.png" alt="">
+    </div>
+    <div class="data">
+      <div class="categories">
+        <button>
+            <img src="Screenshot 2025-01-30 211331.png" alt="Flights">
+            <p>Flights</p>
+        </button>
+        <button>
+            <img src="Screenshot 2025-01-30 211341.png" alt="Hotels">
+            <p>Hotels</p>
+        </button>
+        <button>
+            <img src="Screenshot 2025-01-30 211348.png" alt="Homestays">
+            <p>Homestays & Villas</p>
+        </button>
+        <button>
+            <img src="Screenshot 2025-01-30 211355.png" alt="Holiday Packages">
+            <p>Holiday Packages</p>
+        </button>
+        <button>
+            <img src="Screenshot 2025-01-30 211403.png" alt="Trains">
+            <p>Trains</p>
+        </button>
+        <button>
+            <img src="Screenshot 2025-01-30 211409.png" alt="Buses">
+            <p>Buses</p>
+        </button>
+        <button>
+            <img src="Screenshot 2025-01-30 211415.png" alt="Cabs">
+            <p>Cabs</p>
+        </button>
+        <button>
+            <img src="Screenshot 2025-01-30 211420.png" alt="Forex">
+            <p>Forex Card & Currency</p>
+        </button>
+        <button>
+            <img src="Screenshot 2025-01-30 211426.png" alt="Insurance">
+            <p>Travel Insurance</p>
+        </button>
+    </div>
+    <div class="box">
+      <div class="options">
+        <label class="option-label">
+            <input type="radio" name="trip-type" class="option" id="one-way">
+            <span class="bullet"></span> One Way
+        </label>
+        <label class="option-label">
+            <input type="radio" name="trip-type" class="option" id="round-trip">
+            <span class="bullet"></span> Round Trip
+        </label>
+        <label class="option-label">
+            <input type="radio" name="trip-type" class="option" id="multi-city">
+            <span class="bullet"></span> Multi City
+        </label>
+    </div>
+  </div>
+
+    </div>
+
+    
+    
+  </body>
+</html>
